@@ -1,0 +1,230 @@
+{
+  "openapi": "3.0.0",
+  "x-stoplight": {
+    "id": "16oc3rxzd74re"
+  },
+  "info": {
+    "title": "functionalObject",
+    "description": "Functional object model",
+    "version": "1.0"
+  },
+  "servers": [],
+  "paths": {},
+  "components": {
+    "schemas": {
+      "FO": {
+        "title": "FO",
+        "x-stoplight": {
+          "id": "s3m02rq8n03ox"
+        },
+        "type": "object",
+        "x-tags": [
+          "FO"
+        ],
+        "properties": {
+          "id": {
+            "$ref": "../Object models/id.json"
+          },
+          "releaseId": {
+            "$ref": "../Object models/releaseId.json"
+          },
+          "status": {
+            "$ref": "../Object models/status.json"
+          },
+          "statusDetails": {
+            "$ref": "../Object models/statusDetails.json"
+          },
+          "date": {
+            "$ref": "../Object models/date.json"
+          },
+          "dateModified": {
+            "$ref": "../Object models/dateModified.json"
+          },
+          "identifiers": {
+            "$ref": "../Object models/identifiers.json"
+          },
+          "justification": {
+            "$ref": "../Object models/justification.json"
+          },
+          "datePublished": {
+            "$ref": "../Object models/datePublished.json"
+          },
+          "internalId": {
+            "$ref": "../Object models/internalId.json"
+          },
+          "title": {
+            "$ref": "../Object models/title.json"
+          },
+          "desciption": {
+            "$ref": "../Object models/desciption.json"
+          },
+          "parties": {
+            "$ref": "../Object models/parties.json"
+          },
+          "classification": {
+            "$ref": "../Object models/classification.json"
+          },
+          "additionalClassifications": {
+            "$ref": "../Object models/additionalClassifications.json"
+          },
+          "locations": {
+            "$ref": "../Object models/locations.json"
+          },
+          "documents": {
+            "$ref": "../Object models/documents.json"
+          },
+          "relatedProcesses": {
+            "$ref": "../Object models/relatedProcesses.json"
+          }
+        },
+        "required": [
+          "id",
+          "releaseId",
+          "status",
+          "date",
+          "dateModified"
+        ]
+      },
+      "Epic1": {
+        "title": "FO_Epic1",
+        "x-stoplight": {
+          "id": "rto9ieu2mcg4t"
+        },
+        "type": "object",
+        "x-tags": [
+          "FO"
+        ],
+        "properties": {
+          "id": {
+            "$ref": "../Object models/id.json"
+          },
+          "releaseId": {
+            "$ref": "../Object models/releaseId.json"
+          },
+          "status": {
+            "$ref": "../Object models/status.json"
+          },
+          "identifiers": {
+            "$ref": "../Object models/identifiers.json"
+          },
+          "date": {
+            "$ref": "../Object models/date.json"
+          },
+          "dateModified": {
+            "$ref": "../Object models/dateModified.json"
+          },
+          "datePublished": {
+            "$ref": "../Object models/datePublished.json"
+          },
+          "title": {
+            "$ref": "../Object models/title.json"
+          },
+          "desciption": {
+            "$ref": "../Object models/desciption.json"
+          }
+        },
+        "required": [
+          "id",
+          "releaseId",
+          "status",
+          "identifiers",
+          "date",
+          "dateModified",
+          "datePublished",
+          "title"
+        ]
+      },
+      "Epic2": {
+        "title": "FO_Epic2",
+        "x-stoplight": {
+          "id": "o68pknyu52eo7"
+        },
+        "type": "object",
+        "x-tags": [
+          "FO"
+        ],
+        "properties": {
+          "id": {
+            "$ref": "../Object models/id.json"
+          },
+          "releaseId": {
+            "$ref": "../Object models/releaseId.json"
+          },
+          "dateModified": {
+            "$ref": "../Object models/dateModified.json"
+          },
+          "status": {
+            "$ref": "../Object models/status.json"
+          },
+          "statusDetails": {
+            "$ref": "../Object models/statusDetails.json"
+          },
+          "identifiers": {
+            "$ref": "../Object models/identifiers.json"
+          },
+          "justification": {
+            "$ref": "../Object models/justification.json"
+          },
+          "date": {
+            "$ref": "../Object models/date.json"
+          },
+          "datePublished": {
+            "$ref": "../Object models/datePublished.json"
+          },
+          "title": {
+            "$ref": "../Object models/title.json"
+          },
+          "desciption": {
+            "$ref": "../Object models/desciption.json"
+          }
+        },
+        "required": [
+          "id",
+          "dateModified",
+          "status",
+          "statusDetails",
+          "justification",
+          "date",
+          "datePublished",
+          "title"
+        ]
+      },
+      "FO_fromEpics": {
+        "title": "FO_fromEpics",
+        "x-stoplight": {
+          "id": "ipn97du8iw1pj"
+        },
+        "x-tags": [
+          "FO"
+        ],
+        "allOf": [
+          {
+            "allOf": [
+              {
+                "properties": {
+                  "": {
+                    "type": "string",
+                    "x-stoplight": {
+                      "id": "eubf84cx4nhqm"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "type": "object"
+      },
+      "FO - copy": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/Epic1"
+          },
+          {
+            "$ref": "#/components/schemas/Epic2"
+          }
+        ]
+      }
+    }
+  }
+}
