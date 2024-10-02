@@ -1,0 +1,41 @@
+{
+  "title": "identifiers",
+  "x-stoplight": {
+    "id": "ft8zy35mcz3qv"
+  },
+  "type": "array",
+  "format": "uuid",
+  "description": "DG-002",
+  "items": {
+    "x-stoplight": {
+      "id": "nr0uw4wlokmhw"
+    },
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string",
+        "x-stoplight": {
+          "id": "6knt6fw8ybc23"
+        },
+        "description": "DT-00212"
+      },
+      "scheme": {
+        "type": "string",
+        "x-stoplight": {
+          "id": "jgbvjh2vgngtu"
+        },
+        "description": "DT-00211"
+      },
+      "url": {
+        "type": "string",
+        "x-stoplight": {
+          "id": "gfgu764x74np4"
+        },
+        "description": "DT-00213"
+      }
+    },
+    "required": [
+      "id"
+    ]
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "title": "title",
+  "x-stoplight": {
+    "id": "sgr4okeo0ikc2"
+  },
+  "type": "array",
+  "description": "DG-007",
+  "uniqueItems": true,
+  "minItems": 1,
+  "items": {
+    "x-stoplight": {
+      "id": "1r29xljd0yhyy"
+    },
+    "type": "object",
+    "minProperties": 2,
+    "maxProperties": 2,
+    "properties": {
+      "lang": {
+        "type": "string",
+        "x-stoplight": {
+          "id": "dwso6wjjzf5xu"
+        },
+        "description": "DT-00711"
+      },
+      "translation": {
+        "type": "string",
+        "x-stoplight": {
+          "id": "8sdd70foonwj5"
+        },
+        "description": "DT-00712"
+      }
+    },
+    "required": [
+      "lang",
+      "translation"
+    ]
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "title": "locations",
+  "x-stoplight": {
+    "id": "wzy0dmitciedu"
+  },
+  "type": "array",
+  "format": "date-time",
+  "description": "DG-012",
+  "items": {
+    "x-stoplight": {
+      "id": "whbhykoo44zse"
+    },
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string",
+        "x-stoplight": {
+          "id": "i1pi94c5tjfrg"
+        },
+        "format": "uuid",
+        "pattern": "[a-f0-9]{8}-?[a-f0-9]{4}-?4[a-f0-9]{3}-?[89ab][a-f0-9]{3}-?[a-f0-9]{12}",
+        "description": "DT-01214"
+      },
+      "gazetteer": {
+        "type": "object",
+        "x-stoplight": {
+          "id": "3r33bvv0jah7s"
+        },
+        "description": "DG-01211",
+        "required": [
+          "scheme",
+          "identifiers"
+        ],
+        "properties": {
+          "scheme": {
+            "type": "string",
+            "x-stoplight": {
+              "id": "rrg1gdb4yh4ye"
+            },
+            "description": "DT-012111"
+          },
+          "identifiers": {
+            "type": "array",
+            "x-stoplight": {
+              "id": "q17p8j4mz6fu7"
+            },
+            "description": "DG-012112",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "x-stoplight": {
+                "id": "1qopjg2n10b0h"
+              },
+              "type": "string"
+            }
+          }
+        }
+      },
+      "description": {
+        "type": "string",
+        "x-stoplight": {
+          "id": "4y2s2fh7gzh8f"
+        },
+        "description": "DT-01215"
+      },
+      "geometry": {
+        "type": "object",
+        "x-stoplight": {
+          "id": "u94vcakercspe"
+        },
+        "description": "DT-01212",
+        "properties": {
+          "type": {
+            "type": "string",
+            "x-stoplight": {
+              "id": "q0d108uej5vl6"
+            },
+            "description": "DT-012121"
+          },
+          "coordinates": {
+            "type": "array",
+            "x-stoplight": {
+              "id": "446hws13hs4zw"
+            },
+            "uniqueItems": true,
+            "description": "DG-012122",
+            "items": {
+              "x-stoplight": {
+                "id": "iqm8qruj9ros6"
+              },
+              "type": "array",
+              "items": {
+                "x-stoplight": {
+                  "id": "jfwtp1mrtzp53"
+                },
+                "type": "string"
+              }
+            }
+          }
+        },
+        "required": [
+          "type",
+          "coordinates"
+        ]
+      },
+      "address": {
+        "type": "object",
+        "x-stoplight": {
+          "id": "cnj7y0hrh9b5t"
+        },
+        "description": "DG-01213",
+        "required": [
+          "streetAddress"
+        ],
+        "properties": {
+          "streetAddress": {
+            "type": "string",
+            "x-stoplight": {
+              "id": "821hetwlkswbq"
+            },
+            "description": "DT-012131"
+          }
+        }
+      }
+    },
+    "required": [
+      "id",
+      "gazetteer",
+      "address"
+    ]
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "title": "relatedProcesses",
+  "x-stoplight": {
+    "id": "pseqzf1x19qiq"
+  },
+  "type": "array",
+  "format": "date-time",
+  "description": "DG-015",
+  "uniqueItems": true,
+  "items": {
+    "x-stoplight": {
+      "id": "ijmf3jfn5xm66"
+    },
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string",
+        "x-stoplight": {
+          "id": "yc2jtth92h8xg"
+        },
+        "format": "uuid",
+        "pattern": "[a-f0-9]{8}-?[a-f0-9]{4}-?4[a-f0-9]{3}-?[89ab][a-f0-9]{3}-?[a-f0-9]{12}",
+        "description": "DT-01511"
+      },
+      "scheme": {
+        "type": "string",
+        "x-stoplight": {
+          "id": "z9bvie875hih5"
+        },
+        "description": "DT-01512"
+      },
+      "identifier": {
+        "type": "string",
+        "x-stoplight": {
+          "id": "9q1g4schbsc4j"
+        },
+        "description": "DT-01513"
+      },
+      "relationship": {
+        "type": "string",
+        "x-stoplight": {
+          "id": "9v3nks4hy4e8u"
+        },
+        "description": "DT-01514"
+      },
+      "status": {
+        "type": "string",
+        "x-stoplight": {
+          "id": "e6nrzfaaiqw65"
+        },
+        "description": "DT-01515"
+      }
+    },
+    "required": [
+      "id",
+      "scheme",
+      "identifier",
+      "relationship",
+      "status"
+    ]
+  }
+}
