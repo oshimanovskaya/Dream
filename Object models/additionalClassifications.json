@@ -6,6 +6,7 @@
   "type": "array",
   "format": "date-time",
   "description": "DG-011",
+  "uniqueItems": true,
   "items": {
     "x-stoplight": {
       "id": "yiwh5a1bfnzg9"
@@ -26,10 +27,6 @@
         },
         "description": "DT-01111"
       }
-    },
-    "required": [
-      "id",
-      "scheme"
-    ]
+    }
   }
 }

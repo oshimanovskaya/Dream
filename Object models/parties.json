@@ -26,6 +26,8 @@
           "id": "ri1qp0no8887t"
         },
         "description": "DG-00912",
+        "uniqueItems": true,
+        "minItems": 1,
         "items": {
           "x-stoplight": {
             "id": "1sufwx6np2gqb"
@@ -41,11 +43,8 @@
           "id": "351o5p8av0odo"
         },
         "description": "DG-00913",
-        "required": [
-          "id",
-          "scheme",
-          "legalName"
-        ],
+        "minProperties": 2,
+        "maxProperties": 3,
         "properties": {
           "id": {
             "type": "string",
@@ -83,6 +82,7 @@
               "id": "4q6z9sl2rdb9a"
             },
             "description": "DG-009141",
+            "uniqueItems": true,
             "items": {
               "x-stoplight": {
                 "id": "k826cf2qwzn3j"
@@ -103,17 +103,10 @@
                   },
                   "description": "DT-00914111"
                 }
-              },
-              "required": [
-                "id",
-                "scheme"
-              ]
+              }
             }
           }
-        },
-        "required": [
-          "classifications"
-        ]
+        }
       },
       "persons": {
         "type": "array",
@@ -182,28 +175,12 @@
                     },
                     "description": "DT-009151314\n"
                   }
-                },
-                "required": [
-                  "type",
-                  "jobTitle",
-                  "telephone",
-                  "email"
-                ]
+                }
               }
             }
-          },
-          "required": [
-            "id",
-            "name",
-            "businessFunctions"
-          ]
+          }
         }
       }
-    },
-    "required": [
-      "id",
-      "roles",
-      "identifier"
-    ]
+    }
   }
 }

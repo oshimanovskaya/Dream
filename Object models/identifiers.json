@@ -31,11 +31,9 @@
         "x-stoplight": {
           "id": "gfgu764x74np4"
         },
-        "description": "DT-00213"
+        "description": "DT-00213",
+        "format": "url"
       }
-    },
-    "required": [
-      "id"
-    ]
+    }
   }
 }

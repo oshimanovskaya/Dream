@@ -29,10 +29,6 @@
         },
         "description": "DT-00712"
       }
-    },
-    "required": [
-      "lang",
-      "translation"
-    ]
+    }
   }
 }

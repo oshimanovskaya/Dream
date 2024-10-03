@@ -6,6 +6,7 @@
   "type": "array",
   "format": "date-time",
   "description": "DG-012",
+  "uniqueItems": true,
   "items": {
     "x-stoplight": {
       "id": "whbhykoo44zse"
@@ -27,10 +28,6 @@
           "id": "3r33bvv0jah7s"
         },
         "description": "DG-01211",
-        "required": [
-          "scheme",
-          "identifiers"
-        ],
         "properties": {
           "scheme": {
             "type": "string",
@@ -97,11 +94,7 @@
               }
             }
           }
-        },
-        "required": [
-          "type",
-          "coordinates"
-        ]
+        }
       },
       "address": {
         "type": "object",
@@ -109,9 +102,6 @@
           "id": "cnj7y0hrh9b5t"
         },
         "description": "DG-01213",
-        "required": [
-          "streetAddress"
-        ],
         "properties": {
           "streetAddress": {
             "type": "string",
@@ -122,11 +112,6 @@
           }
         }
       }
-    },
-    "required": [
-      "id",
-      "gazetteer",
-      "address"
-    ]
+    }
   }
 }

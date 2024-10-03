@@ -21,9 +21,5 @@
       },
       "description": "DT-0101"
     }
-  },
-  "required": [
-    "id",
-    "scheme"
-  ]
+  }
 }
