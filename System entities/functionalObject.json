@@ -76,14 +76,7 @@
           "relatedProcesses": {
             "$ref": "../Object models/relatedProcesses.json"
           }
-        },
-        "required": [
-          "id",
-          "releaseId",
-          "status",
-          "date",
-          "dateModified"
-        ]
+        }
       },
       "Epic1": {
         "title": "FO_Epic1",
