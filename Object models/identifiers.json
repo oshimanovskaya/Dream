@@ -1,8 +1,5 @@
 {
   "title": "identifiers",
-  "x-stoplight": {
-    "id": "ft8zy35mcz3qv"
-  },
   "type": "array",
   "format": "uuid",
   "description": "DG-002",
@@ -24,7 +21,12 @@
       }
     },
     "dependentRequired": {
-            "scheme": ["id"]    
-      }     
+      "scheme": [
+        "id"
+      ]
+    },
+    "required": [
+      "id"
+    ]
   }
 }
