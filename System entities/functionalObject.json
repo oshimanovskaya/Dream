@@ -74,7 +74,7 @@
             "$ref": "../Object models/relatedProcesses.json"
           }
         },
-        "dependentRequired": {
+        "dependentAndRequired": {
           "description": [
             "title"
           ],
