@@ -181,42 +181,6 @@
           "datePublished",
           "title"
         ]
-      },
-      "FO_fromEpics": {
-        "title": "FO_fromEpics",
-        "x-stoplight": {
-          "id": "ipn97du8iw1pj"
-        },
-        "x-tags": [
-          "FO"
-        ],
-        "allOf": [
-          {
-            "allOf": [
-              {
-                "properties": {
-                  "": {
-                    "type": "string",
-                    "x-stoplight": {
-                      "id": "eubf84cx4nhqm"
-                    }
-                  }
-                }
-              }
-            ]
-          }
-        ],
-        "type": "object"
-      },
-      "FO - copy": {
-        "allOf": [
-          {
-            "$ref": "#/components/schemas/Epic1"
-          },
-          {
-            "$ref": "#/components/schemas/Epic2"
-          }
-        ]
       }
     }
   }
