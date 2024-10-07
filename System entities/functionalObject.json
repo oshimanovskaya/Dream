@@ -72,14 +72,14 @@
           },
           "relatedProcesses": {
             "$ref": "../Object models/relatedProcesses.json"
-          },
-          "dependentRequired": {
+          }                 
+        },
+        "dependentRequired": {
             "description": ["title"],
             "date": ["dateModified", "datePublished"],
             "dateModified": ["date", "datePublished"],
             "datePublished": ["date", "dateModified"]                                   ,       
-           }                   
-        }
+           }          
       },
       "Epic1": {
         "title": "FO_Epic1",
