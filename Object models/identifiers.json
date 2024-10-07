@@ -20,7 +20,7 @@
         "format": "url"
       }
     },
-    "dependentRequired": {
+    "dependentAndRequired": {
       "scheme": [
         "id"
       ]
