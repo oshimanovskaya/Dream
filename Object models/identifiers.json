@@ -5,6 +5,11 @@
   "description": "DG-002",
   "items": {
     "type": "object",
+    "dependentAndRequired": {
+      "scheme": [
+        "id"
+      ]
+    },
     "properties": {
       "id": {
         "type": "string",
@@ -19,14 +24,6 @@
         "description": "DT-00213",
         "format": "url"
       }
-    },
-    "dependentAndRequired": {
-      "scheme": [
-        "id"
-      ]
-    },
-    "required": [
-      "id"
-    ]
+    }
   }
 }
