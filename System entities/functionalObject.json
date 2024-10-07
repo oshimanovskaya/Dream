@@ -77,9 +77,8 @@
             "description": ["title"],
             "date": ["dateModified", "datePublished"],
             "dateModified": ["date", "datePublished"],
-            "datePublished": ["date", "dateModified"]                                   ,
-            "date": ["title"],            
-           },                   
+            "datePublished": ["date", "dateModified"]                                   ,       
+           }                   
         }
       },
       "Epic1": {
