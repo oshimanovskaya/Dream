@@ -7,6 +7,9 @@
   "description": "DG-007",
   "uniqueItems": true,
   "minItems": 1,
+  "wholelistMerge": true,
+  "mergeByAttr": "scheme,identifier",
+  "mergeStategy": "mergeByAttr(lang)",  
   "items": {
     "x-stoplight": {
       "id": "1r29xljd0yhyy"
@@ -20,6 +23,7 @@
         "x-stoplight": {
           "id": "dwso6wjjzf5xu"
         },
+        "codelist": "sys-langs",
         "description": "DT-00711"
       },
       "translation": {
