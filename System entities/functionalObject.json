@@ -13,7 +13,7 @@
   "components": {
     "schemas": {
       "FO": {
-        "title": "FObject",
+        "title": "FO",
         "type": "object",
         "x-tags": [
           "FO"
@@ -72,14 +72,25 @@
           },
           "relatedProcesses": {
             "$ref": "../Object models/relatedProcesses.json"
-          }                 
+          }
         },
         "dependentRequired": {
-            "description": ["title"],
-            "date": ["dateModified", "datePublished"],
-            "dateModified": ["date", "datePublished"],
-            "datePublished": ["date", "dateModified"]       
-           }          
+          "description": [
+            "title"
+          ],
+          "date": [
+            "dateModified",
+            "datePublished"
+          ],
+          "dateModified": [
+            "date",
+            "datePublished"
+          ],
+          "datePublished": [
+            "date",
+            "dateModified"
+          ]
+        }
       },
       "Epic1": {
         "title": "FO_Epic1",
