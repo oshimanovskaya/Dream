@@ -13,7 +13,7 @@
   "components": {
     "schemas": {
       "FO": {
-        "title": "FO",
+        "title": "FObject",
         "type": "object",
         "x-tags": [
           "FO"
