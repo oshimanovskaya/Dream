@@ -14,9 +14,6 @@
     "schemas": {
       "FO": {
         "title": "FO",
-        "x-stoplight": {
-          "id": "s3m02rq8n03ox"
-        },
         "type": "object",
         "x-tags": [
           "FO"
@@ -75,7 +72,14 @@
           },
           "relatedProcesses": {
             "$ref": "../Object models/relatedProcesses.json"
-          }
+          },
+          "dependentRequired": {
+            "description": ["title"],
+            "date": ["dateModified", "datePublished"],
+            "dateModified": ["date", "datePublished"],
+            "datePublished": ["date", "dateModified"]                                   ,
+            "date": ["title"],            
+           },                   
         }
       },
       "Epic1": {

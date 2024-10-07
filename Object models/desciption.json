@@ -1,32 +1,20 @@
 {
   "title": "desciption",
-  "x-stoplight": {
-    "id": "gn7vv6v8e35x7"
-  },
   "type": "array",
   "description": "DG-008",
   "uniqueItems": true,
   "minItems": 1,
   "items": {
-    "x-stoplight": {
-      "id": "wcyivbws7rv8m"
-    },
     "type": "object",
     "minProperties": 2,
     "maxProperties": 2,
     "properties": {
       "lang": {
         "type": "string",
-        "x-stoplight": {
-          "id": "6eai81562bs88"
-        },
         "description": "DT-00811"
       },
       "translation": {
         "type": "string",
-        "x-stoplight": {
-          "id": "kp71hnkck1b00"
-        },
         "description": "DT-00812"
       }
     }

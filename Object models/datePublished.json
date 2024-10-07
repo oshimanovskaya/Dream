@@ -1,8 +1,5 @@
 {
   "title": "datePublished",
-  "x-stoplight": {
-    "id": "gmjn1jpkibzyb"
-  },
   "type": "string",
   "description": "DT-016",
   "format": "date-time",

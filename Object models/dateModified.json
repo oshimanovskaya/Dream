@@ -1,8 +1,5 @@
 {
   "title": "dateModified",
-  "x-stoplight": {
-    "id": "36a4pilbexbc2"
-  },
   "type": "string",
   "description": "DT-005",
   "format": "date-time",
