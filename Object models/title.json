@@ -5,16 +5,7 @@
   "uniqueItems": true,
   "minItems": 1,
   "wholelistMerge": true,
-  "mergeByAttr": {
-      "type": "object",
-      "items": {
-        "type": "string",
-        "enum": [
-          "scheme",
-          "identifier"
-          ]
-      }
-  },
+  "mergeByAttr": ["scheme", "identifier"],
   "mergeStategy": "mergeByAttr(lang)",  
   "items": {
     "type": "object",
