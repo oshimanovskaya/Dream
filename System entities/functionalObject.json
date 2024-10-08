@@ -1,5 +1,5 @@
 {
-  "openapi": "3.0.0",
+  "openapi": "3.1.0",
   "x-stoplight": {
     "id": "16oc3rxzd74re"
   },
@@ -74,7 +74,7 @@
             "$ref": "../Object models/relatedProcesses.json"
           }
         },
-        "dependentAndRequired": {
+        "dependentRequired": {
           "description": [
             "title"
           ],
