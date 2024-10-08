@@ -19,11 +19,6 @@
         "description": "DT-00213",
         "format": "url"
       }
-    },
-    "dependentAndRequired": {
-      "scheme": [
-        "id"
-      ]
-    }    
+    }  
   }
 }
