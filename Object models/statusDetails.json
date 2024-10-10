@@ -1,8 +1,6 @@
 {
   "title": "statusDetails",
-  "x-stoplight": {
-    "id": "dfsht1irwec92"
-  },
   "type": "string",
+  "codelist": "object-status-details",
   "description": "DT-017"
 }

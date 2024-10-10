@@ -1,24 +1,16 @@
 {
   "title": "classification",
-  "x-stoplight": {
-    "id": "nuui9jmcfpp2w"
-  },
   "type": "object",
   "format": "date-time",
   "description": "DG-010",
   "properties": {
     "id": {
       "type": "string",
-      "x-stoplight": {
-        "id": "ruwfzo5j1k4zj"
-      },
       "description": "DT-0102"
     },
     "scheme": {
       "type": "string",
-      "x-stoplight": {
-        "id": "h0nx9cxjvbjq6"
-      },
+      "codelist": "primary-classifiers",      
       "description": "DT-0101"
     }
   }

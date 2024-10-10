@@ -1,24 +1,21 @@
 {
   "title": "identifiers",
-  "type": "array",
+  "type": "object",
   "format": "uuid",
-  "description": "DG-002",
-  "items": {
-    "type": "object",
-    "properties": {
-      "id": {
-        "type": "string",
-        "description": "DT-00212"
-      },
-      "scheme": {
-        "type": "string",
-        "description": "DT-00211"
-      },
-      "url": {
-        "type": "string",
-        "description": "DT-00213",
-        "format": "url"
-      }
-    }  
+  "description": "DG-0021",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "DT-00212"
+    },
+    "scheme": {
+      "type": "string",
+      "description": "DT-00211"
+    },
+    "url": {
+      "type": "string",
+      "description": "DT-00213",
+      "format": "url"
+    }
   }
 }

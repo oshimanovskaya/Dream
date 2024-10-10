@@ -1,8 +1,5 @@
 {
   "openapi": "3.0.0",
-  "x-stoplight": {
-    "id": "16oc3rxzd74re"
-  },
   "info": {
     "title": "functionalObject",
     "description": "Functional object model",
@@ -13,11 +10,28 @@
   "components": {
     "schemas": {
       "FO": {
-        "title": "FO",
+        "title": "Functional object",
         "type": "object",
         "x-tags": [
           "FO"
         ],
+        "dependentRequired": {
+          "description": [
+            "title"
+          ],
+          "date": [
+            "dateModified",
+            "datePublished"
+          ],
+          "dateModified": [
+            "date",
+            "datePublished"
+          ],
+          "datePublished": [
+            "date",
+            "dateModified"
+          ]
+        },
         "properties": {
           "id": {
             "$ref": "../Object models/id.json"
@@ -38,7 +52,11 @@
             "$ref": "../Object models/dateModified.json"
           },
           "identifiers": {
-            "$ref": "../Object models/identifiers.json"
+            "description": "DG-002",
+            "type": "array",
+            "items": {
+              "$ref": "../Object models/identifiers.json"
+            }
           },
           "justification": {
             "$ref": "../Object models/justification.json"
@@ -62,7 +80,15 @@
             "$ref": "../Object models/classification.json"
           },
           "additionalClassifications": {
-            "$ref": "../Object models/additionalClassifications.json"
+            "type": "array",
+            "description": "DG-011",
+            "uniqueItems": true,
+            "mergeByAttr": [
+              "scheme"
+            ],            
+            "items": {
+              "$ref": "../Object models/additionalClassifications.json"
+            }
           },
           "locations": {
             "$ref": "../Object models/locations.json"
@@ -71,32 +97,21 @@
             "$ref": "../Object models/documents.json"
           },
           "relatedProcesses": {
-            "$ref": "../Object models/relatedProcesses.json"
+            "type": "array",
+            "description": "DG-015",
+            "uniqueItems": true,
+            "mergeByAttr": [
+              "scheme",
+              "identifier"
+            ],
+            "items": {
+              "$ref": "../Object models/relatedProcesses.json"
+            }
           }
-        },
-        "dependentRequired": {
-          "description": [
-            "title"
-          ],
-          "date": [
-            "dateModified",
-            "datePublished"
-          ],
-          "dateModified": [
-            "date",
-            "datePublished"
-          ],
-          "datePublished": [
-            "date",
-            "dateModified"
-          ]
         }
       },
       "Epic1": {
         "title": "FO_Epic1",
-        "x-stoplight": {
-          "id": "rto9ieu2mcg4t"
-        },
         "type": "object",
         "x-tags": [
           "FO"
@@ -143,9 +158,6 @@
       },
       "Epic2": {
         "title": "FO_Epic2",
-        "x-stoplight": {
-          "id": "o68pknyu52eo7"
-        },
         "type": "object",
         "x-tags": [
           "FO"

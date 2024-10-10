@@ -1,32 +1,25 @@
 {
   "title": "additionalClassifications",
   "x-stoplight": {
-    "id": "o5e801r82hap1"
+    "id": "sut80vyb5hc3o"
   },
-  "type": "array",
+  "type": "object",
   "format": "date-time",
-  "description": "DG-011",
-  "uniqueItems": true,
-  "items": {
-    "x-stoplight": {
-      "id": "yiwh5a1bfnzg9"
-    },
-    "type": "object",
-    "properties": {
-      "id": {
-        "type": "string",
-        "x-stoplight": {
-          "id": "5vx6zehr00091"
-        },
-        "description": "DT-01112"
+  "description": "DG-0111",
+  "properties": {
+    "id": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "n5la9iytopciv"
       },
-      "scheme": {
-        "type": "string",
-        "x-stoplight": {
-          "id": "p6i3oyuuxo7sb"
-        },
-        "description": "DT-01111"
-      }
+      "description": "DT-01112"
+    },
+    "scheme": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "pzztsn3icn4ip"
+      },
+      "description": "DT-01111"
     }
   }
 }
