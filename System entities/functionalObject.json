@@ -34,22 +34,46 @@
         },
         "properties": {
           "id": {
-            "$ref": "../Object models/id.json"
+            "type": "string",
+            "description": "DT-001",
+            "format": "oc4ids_id",
+            "pattern": "[a-f0-9]{8}-?[a-f0-9]{4}-?4[a-f0-9]{3}-?[89ab][a-f0-9]{3}-?[a-f0-9]{12}"
           },
           "releaseId": {
-            "$ref": "../Object models/releaseId.json"
+            "type": "string",
+            "description": "DT-020",
+            "format": "uuid",
+            "pattern": "[a-f0-9]{8}-?[a-f0-9]{4}-?4[a-f0-9]{3}-?[89ab][a-f0-9]{3}-?[a-f0-9]{12}"
+          },
+          "internalId": {
+            "type": "string",
+            "description": "DT-006"
           },
           "status": {
-            "$ref": "../Object models/status.json"
+            "type": "string",
+            "codelist": "object-statuses",
+            "description": "DT-003"
           },
           "statusDetails": {
             "$ref": "../Object models/statusDetails.json"
           },
           "date": {
-            "$ref": "../Object models/date.json"
+            "type": "string",
+            "description": "DT-004",
+            "format": "date-time",
+            "pattern": "^[0-9]{4}-((0[13578]|1[02])-(0[1-9]|[12][0-9]|3[01])|(0[469]|11)-(0[1-9]|[12][0-9]|30)|(02)-(0[1-9]|[12][0-9]))T(0[0-9]|1[0-9]|2[0-3]):(0[0-9]|[1-5][0-9]):(0[0-9]|[1-5][0-9])\\.[0-9]{3}Z$"
           },
           "dateModified": {
-            "$ref": "../Object models/dateModified.json"
+            "type": "string",
+            "pattern": "^[0-9]{4}-((0[13578]|1[02])-(0[1-9]|[12][0-9]|3[01])|(0[469]|11)-(0[1-9]|[12][0-9]|30)|(02)-(0[1-9]|[12][0-9]))T(0[0-9]|1[0-9]|2[0-3]):(0[0-9]|[1-5][0-9]):(0[0-9]|[1-5][0-9])\\.[0-9]{3}Z$",
+            "format": "date-time",
+            "description": "DT-005"
+          },
+          "datePublished": {
+            "type": "string",
+            "format": "date-time",
+            "pattern": "^[0-9]{4}-((0[13578]|1[02])-(0[1-9]|[12][0-9]|3[01])|(0[469]|11)-(0[1-9]|[12][0-9]|30)|(02)-(0[1-9]|[12][0-9]))T(0[0-9]|1[0-9]|2[0-3]):(0[0-9]|[1-5][0-9]):(0[0-9]|[1-5][0-9])\\.[0-9]{3}Z$",
+            "description": "DT-016"
           },
           "identifiers": {
             "description": "DG-002",
@@ -61,20 +85,34 @@
           "justification": {
             "$ref": "../Object models/justification.json"
           },
-          "datePublished": {
-            "$ref": "../Object models/datePublished.json"
-          },
-          "internalId": {
-            "$ref": "../Object models/internalId.json"
-          },
           "title": {
-            "$ref": "../Object models/title.json"
+            "type": "array",
+            "description": "DG-007",
+            "mergeByAttr": [
+              "lang"
+            ],
+            "items": {
+              "$ref": "../Object models/title.json"
+            }
           },
           "desciption": {
-            "$ref": "../Object models/desciption.json"
+            "type": "array",
+            "description": "DG-008",
+            "mergeByAttr": [
+              "lang"
+            ],
+            "items": {
+              "$ref": "../Object models/desciption.json"
+            }
           },
           "parties": {
-            "$ref": "../Object models/parties.json"
+            "type": "array",
+            "description": "DG-009",
+            "uniqueItems": true,
+            "minItems": 1,
+            "items": {
+              "$ref": "../Object models/parties.json"
+            }
           },
           "classification": {
             "$ref": "../Object models/classification.json"
@@ -85,16 +123,31 @@
             "uniqueItems": true,
             "mergeByAttr": [
               "scheme"
-            ],            
+            ],
             "items": {
               "$ref": "../Object models/additionalClassifications.json"
             }
           },
           "locations": {
-            "$ref": "../Object models/locations.json"
+            "type": "array",
+            "description": "DG-012",
+            "mergeByAttr": [
+              "id"
+            ],
+            "uniqueItems": true,
+            "items": {
+              "$ref": "../Object models/locations.json"
+            }
           },
           "documents": {
-            "$ref": "../Object models/documents.json"
+            "type": "array",
+            "description": "DG-014",
+            "mergeByAttr": [
+              "id"
+            ],
+            "items": {
+              "$ref": "../Object models/documents.json"
+            }
           },
           "relatedProcesses": {
             "type": "array",
