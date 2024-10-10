@@ -1,8 +1,5 @@
 {
   "title": "internalId",
-  "x-stoplight": {
-    "id": "upn8whz22x517"
-  },
   "type": "string",
   "description": "DT-006"
 }

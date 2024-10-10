@@ -1,24 +1,15 @@
 {
   "title": "additionalClassifications",
-  "x-stoplight": {
-    "id": "sut80vyb5hc3o"
-  },
   "type": "object",
   "format": "date-time",
   "description": "DG-0111",
   "properties": {
     "id": {
       "type": "string",
-      "x-stoplight": {
-        "id": "n5la9iytopciv"
-      },
       "description": "DT-01112"
     },
     "scheme": {
       "type": "string",
-      "x-stoplight": {
-        "id": "pzztsn3icn4ip"
-      },
       "description": "DT-01111"
     }
   }

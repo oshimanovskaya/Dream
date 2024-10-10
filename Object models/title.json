@@ -1,26 +1,18 @@
 {
   "title": "title",
-  "type": "array",
-  "description": "DG-007",
-  "uniqueItems": true,
-  "minItems": 1,
-  "wholelistMerge": true,
-  "mergeByAttr": ["scheme", "identifier"],
-  "mergeStategy": "mergeByAttr(lang)",  
-  "items": {
-    "type": "object",
-    "minProperties": 2,
-    "maxProperties": 2,
-    "properties": {
-      "lang": {
-        "type": "string",
-        "codelist": "sys-langs",
-        "description": "DT-00711"
-      },
-      "translation": {
-        "type": "string",
-        "description": "DT-00712"
-      }
+  "type": "object",
+  "description": "DG-0071",
+  "minProperties": 2,
+  "maxProperties": 2,
+  "properties": {
+    "lang": {
+      "type": "string",
+      "codelist": "sys-langs",
+      "description": "DT-00711"
+    },
+    "translation": {
+      "type": "string",
+      "description": "DT-00712"
     }
   }
 }

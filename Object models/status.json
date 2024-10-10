@@ -1,8 +1,5 @@
 {
   "title": "status",
-  "x-stoplight": {
-    "id": "u7qa4z2t10asl"
-  },
   "type": "string",
   "description": "DT-003"
 }

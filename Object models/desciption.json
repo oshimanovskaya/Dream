@@ -1,22 +1,17 @@
 {
   "title": "desciption",
-  "type": "array",
-  "description": "DG-008",
-  "uniqueItems": true,
-  "minItems": 1,
-  "items": {
-    "type": "object",
-    "minProperties": 2,
-    "maxProperties": 2,
-    "properties": {
-      "lang": {
-        "type": "string",
-        "description": "DT-00811"
-      },
-      "translation": {
-        "type": "string",
-        "description": "DT-00812"
-      }
+  "type": "object",
+  "description": "DG-0081",
+  "minProperties": 2,
+  "maxProperties": 2,
+  "properties": {
+    "lang": {
+      "type": "string",
+      "description": "DT-00811"
+    },
+    "translation": {
+      "type": "string",
+      "description": "DT-00812"
     }
   }
 }
