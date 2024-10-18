@@ -1,0 +1,41 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Epic3",
+    "description": "Create external relation for the initiated functional object",
+    "version": "1.0"
+  },
+  "servers": [],
+  "paths": {},
+  "components": {
+    "schemas": {
+      "Epic3": {
+        "title": "Epic3",
+        "type": "object",
+        "x-tags": [
+          "Epic3"
+        ],
+        "properties": {
+          "dateModified": {
+            "$ref": "../Object models/dateModified.json"
+          },
+          "status": {
+            "$ref": "../Object models/status.json"
+          },
+          "relatedProcesses": {
+      "type": "array",
+      "description": "DG-015",
+      "items": {
+        "$ref": "../Object models/relatedProcesses.json"
+      }
+    }
+        },
+        "required": [
+          "dateModified",
+          "status",
+          "relatedProcesses"
+        ]
+      }
+    }
+  }
+}

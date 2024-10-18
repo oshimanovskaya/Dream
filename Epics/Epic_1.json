@@ -1,0 +1,49 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Epic1",
+    "description": "Initialize functional object",
+    "version": "1.0"
+  },
+  "servers": [],
+  "paths": {},
+  "components": {
+    "schemas": {
+      "Epic1": {
+        "title": "Epic1",
+        "type": "object",
+        "x-tags": [
+          "Epic1"
+        ],
+        "properties": {
+          "id": {
+            "$ref": "../Object models/id.json"
+          },
+          "releaseId": {
+            "$ref": "../Object models/releaseId.json"
+          },
+          "date": {
+            "$ref": "../Object models/date.json"
+          },
+          "dateModified": {
+            "$ref": "../Object models/dateModified.json"
+          },
+          "status": {
+            "$ref": "../Object models/status.json"
+          },
+          "identifiers": {
+            "$ref": "../Object models/identifiers.json"
+          }
+        },
+        "required": [
+          "id",
+          "releaseId",
+          "date",
+          "dateModified",
+          "status",
+          "identifiers"
+        ]
+      }
+    }
+  }
+}
