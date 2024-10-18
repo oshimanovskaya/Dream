@@ -13,7 +13,7 @@
     "/cancelFO": {
       "post": {
         "summary": "Story3",
-        "operationId": "post-user",
+        "operationId": "Cancel of initiating a functional object based on an event",
         "responses": {
           "202": {
             "description": "Accepted",

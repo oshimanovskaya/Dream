@@ -13,7 +13,7 @@
     "/createFO": {
       "post": {
         "summary": "Story1",
-        "operationId": "post-user",
+        "operationId": "Initialize functional object",
         "responses": {
           "202": {
             "description": "Accepted",
@@ -35,14 +35,7 @@
           }
         },
         "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "type": "object",
-                "properties": {}
-              }
-            }
-          },
+          "content": {},
           "description": ""
         },
         "description": "Story_1: Initialize functional object"

@@ -13,7 +13,7 @@
     "/createExternalRelationFO": {
       "post": {
         "summary": "Story4",
-        "operationId": "post-user",
+        "operationId": "Create external relation for the initiated functional object",
         "responses": {
           "202": {
             "description": "Accepted",
@@ -56,7 +56,7 @@
           },
           "description": ""
         },
-        "description": "Story_2: Create external relation for the initiated functional object"
+        "description": "Story_4: Create external relation for the initiated functional object"
       },
       "parameters": []
     }
