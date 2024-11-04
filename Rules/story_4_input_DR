@@ -1,0 +1,108 @@
+{
+    "epic": "E-003",
+    "case": "C-003",
+    "story": "S-004",
+    "fr": "001",
+     "criterion": {
+        "id": "DT-01512",
+        "vr": "01",
+        "description": "Реквізит наявний",
+        "type": "dReq",
+        "relatesTo": "input",
+        "relatedItem": "DT-01512",
+        "requirementGroups": [
+            {
+                "id": "DT-01512",
+                "requirements": [
+                    {
+                        "id": "01",
+                        "fact": "xpath",
+                        "value": "{xPath as per DM}"
+                    },
+                    {
+                        "id": "02",
+                        "fact": "codelist",
+                        "value": "{codelise as per DM}"
+                    },
+                    {
+                        "id": "05",
+                        "fact": "type",
+                        "value": "{type as per DM}"
+                    }
+                ]
+            }
+        ]
+    }
+},
+{
+    "epic": "E-003",
+    "case": "C-003",
+    "story": "S-004",
+    "fr": "001",
+     "criterion": {
+        "id": "DT-01513",
+        "vr": "02",
+        "description": "Реквізит наявний",
+        "type": "dReq",
+        "relatesTo": "input",
+        "relatedItem": "DT-01513",
+        "requirementGroups": [
+            {
+                "id": "DT-01513",
+                "requirements": [
+                    {
+                        "id": "01",
+                        "fact": "xpath",
+                        "value": "{xPath as per DM}"
+                    },
+                    {
+                        "id": "03",
+                        "fact": "externality",
+                        "value": "{externality as per DM}"
+                    },
+                    {
+                        "id": "05",
+                        "fact": "type",
+                        "value": "{type as per DM}"
+                    }
+                ]
+            }
+        ]
+    }
+},
+{
+    "epic": "E-003",
+    "case": "C-003",
+    "story": "S-004",
+    "fr": "001",
+     "criterion": {
+        "id": "DT-01514",
+        "vr": "03",
+        "description": "Реквізит наявний",
+        "type": "dReq",
+        "relatesTo": "input",
+        "relatedItem": "DT-01514",
+        "requirementGroups": [
+            {
+                "id": "DT-01514",
+                "requirements": [
+                    {
+                        "id": "01",
+                        "fact": "xpath",
+                        "value": "{xPath as per DM}"
+                    },
+                    {
+                        "id": "02",
+                        "fact": "codelist",
+                        "value": "{codelise as per DM}"
+                    },
+                    {
+                        "id": "05",
+                        "fact": "type",
+                        "value": "{type as per DM}"
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,71 @@
+{
+    "epic": "E-003",
+    "case": "C-003",
+    "story": "S-004",
+    "fr": "001",
+    "criterion": {
+        "id": "20602001",
+        "vr": "0x",
+        "description": "",
+        "type": "bReq",
+        "relatesTo": "input",
+        "relatedItem": "BT-010612",
+        "requirementGroups": [
+            {
+                "id": "20602001-09",
+                "description":"",
+                "date": "",
+                "when": {
+                    "any": [
+                        {
+                            "all": [
+                                {
+                                    "id": "20602001-09-01",
+                                    "description":"",
+                                    "fact": "DT-009131",
+                                    "operator": "equal",
+                                    "value": "UA-EDR"
+                                }
+                            ]
+                        }
+                    ]            
+                },
+                "requirements": [
+                    {
+                        "id": "20602001-09-02",
+                        "type": "checkElementValue",
+                        "fact": "DT-009133",
+                        "operator": "in",
+                        "value": ""
+                    }
+                ]
+            },
+            {
+                "id": "20602001-10",
+                "when": {
+                    "any": [
+                        {
+                            "all": [
+                                {
+                                    "id": "20602001-10-01",
+                                    "fact": "DT-009131",
+                                    "operator": "equal",
+                                    "value": "UA-IPN"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "requirements": [
+                    {
+                        "id": "20602001-10-02",
+                        "type": "checkElementValue",
+                        "fact": "DT-009133",
+                        "operator": "in",
+                        "value": ""
+                    }
+                ]
+            }
+        ]
+    }
+}
