@@ -1,0 +1,1126 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Generated schema for Root",
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "string"
+    },
+    "rules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "when": {
+            "type": "object",
+            "properties": {
+              "conditions": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "target": {
+                      "anyOf": [
+                        {
+                          "properties": {
+                            "kind": {
+                              "type": "string",
+                              "enum": [
+                                "reference"
+                              ]
+                            },
+                            "source": {
+                              "type": "string"
+                            },
+                            "path": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "kind",
+                            "source",
+                            "path"
+                          ]
+                        },
+                        {
+                          "properties": {
+                            "kind": {
+                              "type": "string",
+                              "enum": [
+                                "fact"
+                              ]
+                            },
+                            "fact": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "kind",
+                            "fact"
+                          ]
+                        }
+                      ],
+                      "type": "object"
+                    },
+                    "comparator": {
+                      "type": "string",
+                      "enum": [
+                        "contains",
+                        "equal"
+                      ]
+                    },
+                    "compareWith": {
+                      "anyOf": [
+                        {
+                          "properties": {
+                            "kind": {
+                              "type": "string",
+                              "enum": [
+                                "fact"
+                              ]
+                            },
+                            "fact": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "kind",
+                            "fact"
+                          ]
+                        },
+                        {
+                          "properties": {
+                            "kind": {
+                              "type": "string",
+                              "enum": [
+                                "reference"
+                              ]
+                            },
+                            "source": {
+                              "type": "string"
+                            },
+                            "path": {
+                              "type": "string"
+                            }
+                          }
+                        }
+                      ],
+                      "type": "object"
+                    }
+                  },
+                  "required": [
+                    "target",
+                    "comparator",
+                    "compareWith"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "conditions"
+            ]
+          },
+          "steps": {
+            "type": "array",
+            "items": {
+              "anyOf": [
+                {
+                  "properties": {
+                    "type": {
+                      "type": "string",
+                      "enum": [
+                        "call"
+                      ]
+                    },
+                    "when": {
+                      "type": "object",
+                      "properties": {
+                        "conditions": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "target": {
+                                "anyOf": [
+                                  {
+                                    "properties": {
+                                      "kind": {
+                                        "type": "string",
+                                        "enum": [
+                                          "fact"
+                                        ]
+                                      },
+                                      "fact": {
+                                        "type": "string"
+                                      }
+                                    },
+                                    "required": [
+                                      "kind",
+                                      "fact"
+                                    ]
+                                  },
+                                  {
+                                    "properties": {
+                                      "kind": {
+                                        "type": "string",
+                                        "enum": [
+                                          "reference"
+                                        ]
+                                      },
+                                      "source": {
+                                        "type": "string"
+                                      },
+                                      "path": {
+                                        "type": "string"
+                                      }
+                                    },
+                                    "required": [
+                                      "kind",
+                                      "source",
+                                      "path"
+                                    ]
+                                  }
+                                ],
+                                "type": "object"
+                              },
+                              "comparator": {
+                                "type": "string",
+                                "enum": [
+                                  "contains",
+                                  "equal"
+                                ]
+                              },
+                              "compareWith": {
+                                "anyOf": [
+                                  {
+                                    "properties": {
+                                      "kind": {
+                                        "type": "string",
+                                        "enum": [
+                                          "fact"
+                                        ]
+                                      },
+                                      "fact": {
+                                        "type": "string"
+                                      }
+                                    },
+                                    "required": [
+                                      "kind",
+                                      "fact"
+                                    ]
+                                  },
+                                  {
+                                    "properties": {
+                                      "kind": {
+                                        "type": "string",
+                                        "enum": [
+                                          "reference"
+                                        ]
+                                      },
+                                      "source": {
+                                        "type": "string"
+                                      },
+                                      "path": {
+                                        "type": "string"
+                                      }
+                                    },
+                                    "required": [
+                                      "kind",
+                                      "source",
+                                      "path"
+                                    ]
+                                  }
+                                ],
+                                "type": "object"
+                              }
+                            },
+                            "required": [
+                              "target",
+                              "comparator",
+                              "compareWith"
+                            ]
+                          }
+                        }
+                      },
+                      "required": [
+                        "conditions"
+                      ]
+                    },
+                    "uri": {
+                      "type": "string"
+                    },
+                    "args": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "name": {
+                            "type": "string"
+                          },
+                          "type": {
+                            "type": "string"
+                          },
+                          "value": {
+                            "anyOf": [
+                              {
+                                "properties": {
+                                  "kind": {
+                                    "type": "string",
+                                    "enum": [
+                                      "fact"
+                                    ]
+                                  },
+                                  "fact": {
+                                    "type": "string"
+                                  }
+                                },
+                                "required": [
+                                  "kind",
+                                  "fact"
+                                ]
+                              },
+                              {
+                                "properties": {
+                                  "kind": {
+                                    "type": "string",
+                                    "enum": [
+                                      "reference"
+                                    ]
+                                  },
+                                  "source": {
+                                    "type": "string"
+                                  },
+                                  "path": {
+                                    "type": "string"
+                                  }
+                                },
+                                "required": [
+                                  "kind",
+                                  "source",
+                                  "path"
+                                ]
+                              }
+                            ],
+                            "type": "object"
+                          }
+                        },
+                        "required": [
+                          "name",
+                          "type",
+                          "value"
+                        ]
+                      }
+                    },
+                    "result": {
+                      "type": "object",
+                      "required": [
+                        "name",
+                        "action"
+                      ],
+                      "properties": {
+                        "name": {
+                          "type": "string"
+                        },
+                        "action": {
+                          "type": "string",
+                          "enum": [
+                            "put"
+                          ]
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "type",
+                    "uri",
+                    "args",
+                    "result"
+                  ]
+                },
+                {
+                  "properties": {
+                    "type": {
+                      "type": "string",
+                      "enum": [
+                        "requirement"
+                      ]
+                    },
+                    "when": {
+                      "type": "object",
+                      "properties": {
+                        "conditions": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "target": {
+                                "anyOf": [
+                                  {
+                                    "properties": {
+                                      "kind": {
+                                        "type": "string",
+                                        "enum": [
+                                          "fact"
+                                        ]
+                                      },
+                                      "fact": {
+                                        "type": "string"
+                                      }
+                                    },
+                                    "required": [
+                                      "kind",
+                                      "fact"
+                                    ]
+                                  },
+                                  {
+                                    "properties": {
+                                      "kind": {
+                                        "type": "string",
+                                        "enum": [
+                                          "reference"
+                                        ]
+                                      },
+                                      "source": {
+                                        "type": "string"
+                                      },
+                                      "path": {
+                                        "type": "string"
+                                      }
+                                    },
+                                    "required": [
+                                      "kind",
+                                      "source",
+                                      "path"
+                                    ]
+                                  }
+                                ],
+                                "type": "object"
+                              },
+                              "comparator": {
+                                "type": "string",
+                                "enum": [
+                                  "contains",
+                                  "equal"
+                                ]
+                              },
+                              "compareWith": {
+                                "anyOf": [
+                                  {
+                                    "properties": {
+                                      "kind": {
+                                        "type": "string",
+                                        "enum": [
+                                          "fact"
+                                        ]
+                                      },
+                                      "fact": {
+                                        "type": "string"
+                                      }
+                                    },
+                                    "required": [
+                                      "kind",
+                                      "fact"
+                                    ]
+                                  },
+                                  {
+                                    "properties": {
+                                      "kind": {
+                                        "type": "string",
+                                        "enum": [
+                                          "reference"
+                                        ]
+                                      },
+                                      "source": {
+                                        "type": "string"
+                                      },
+                                      "path": {
+                                        "type": "string"
+                                      }
+                                    },
+                                    "required": [
+                                      "kind",
+                                      "source",
+                                      "path"
+                                    ]
+                                  }
+                                ],
+                                "type": "object"
+                              }
+                            },
+                            "required": [
+                              "target",
+                              "comparator",
+                              "compareWith"
+                            ]
+                          }
+                        }
+                      },
+                      "required": [
+                        "conditions"
+                      ]
+                    },
+                    "target": {
+                      "anyOf": [
+                        {
+                          "properties": {
+                            "kind": {
+                              "type": "string",
+                              "enum": [
+                                "fact"
+                              ]
+                            },
+                            "fact": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "kind",
+                            "fact"
+                          ]
+                        },
+                        {
+                          "properties": {
+                            "kind": {
+                              "type": "string",
+                              "enum": [
+                                "reference"
+                              ]
+                            },
+                            "source": {
+                              "type": "string"
+                            },
+                            "path": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "kind",
+                            "source",
+                            "path"
+                          ]
+                        }
+                      ],
+                      "type": "object"
+                    },
+                    "compareWith": {
+                      "anyOf": [
+                        {
+                          "properties": {
+                            "kind": {
+                              "type": "string",
+                              "enum": [
+                                "fact"
+                              ]
+                            },
+                            "fact": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "kind",
+                            "fact"
+                          ]
+                        },
+                        {
+                          "properties": {
+                            "kind": {
+                              "type": "string",
+                              "enum": [
+                                "reference"
+                              ]
+                            },
+                            "source": {
+                              "type": "string"
+                            },
+                            "path": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "kind",
+                            "source",
+                            "path"
+                          ]
+                        }
+                      ],
+                      "type": "object"
+                    },
+                    "comparator": {
+                      "type": "string",
+                      "enum": [
+                        "contains",
+                        "equal"
+                      ]
+                    },
+                    "errorCode": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "type",
+                    "target",
+                    "compareWith",
+                    "comparator",
+                    "errorCode"
+                  ]
+                },
+                {
+                  "properties": {
+                    "type": {
+                      "type": "string",
+                      "enum": [
+                        "action"
+                      ]
+                    },
+                    "when": {
+                      "type": "object",
+                      "properties": {
+                        "conditions": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "target": {
+                                "anyOf": [
+                                  {
+                                    "properties": {
+                                      "kind": {
+                                        "type": "string",
+                                        "enum": [
+                                          "fact"
+                                        ]
+                                      },
+                                      "fact": {
+                                        "type": "string"
+                                      }
+                                    },
+                                    "required": [
+                                      "kind",
+                                      "fact"
+                                    ]
+                                  },
+                                  {
+                                    "properties": {
+                                      "kind": {
+                                        "type": "string",
+                                        "enum": [
+                                          "reference"
+                                        ]
+                                      },
+                                      "source": {
+                                        "type": "string"
+                                      },
+                                      "path": {
+                                        "type": "string"
+                                      }
+                                    },
+                                    "required": [
+                                      "kind",
+                                      "source",
+                                      "path"
+                                    ]
+                                  }
+                                ],
+                                "type": "object"
+                              },
+                              "comparator": {
+                                "type": "string",
+                                "enum": [
+                                  "contains",
+                                  "equal"
+                                ]
+                              },
+                              "compareWith": {
+                                "anyOf": [
+                                  {
+                                    "properties": {
+                                      "kind": {
+                                        "type": "string",
+                                        "enum": [
+                                          "fact"
+                                        ]
+                                      },
+                                      "fact": {
+                                        "type": "string"
+                                      }
+                                    },
+                                    "required": [
+                                      "kind",
+                                      "fact"
+                                    ]
+                                  },
+                                  {
+                                    "properties": {
+                                      "kind": {
+                                        "type": "string",
+                                        "enum": [
+                                          "reference"
+                                        ]
+                                      },
+                                      "source": {
+                                        "type": "string"
+                                      },
+                                      "path": {
+                                        "type": "string"
+                                      }
+                                    },
+                                    "required": [
+                                      "kind",
+                                      "source",
+                                      "path"
+                                    ]
+                                  }
+                                ],
+                                "type": "object"
+                              }
+                            },
+                            "required": [
+                              "target",
+                              "comparator",
+                              "compareWith"
+                            ]
+                          }
+                        }
+                      },
+                      "required": [
+                        "conditions"
+                      ]
+                    },
+                    "dataScheme": {
+                      "type": "object",
+                      "required": [
+                        "type",
+                        "properties"
+                      ],
+                      "properties": {
+                        "type": {
+                          "type": "string",
+                          "enum": [
+                            "struct"
+                          ]
+                        },
+                        "properties": {
+                          "type": "array",
+                          "items": {
+                            "anyOf": [
+                              {
+                                "properties": {
+                                  "name": {
+                                    "type": "string"
+                                  },
+                                  "type": {
+                                    "type": "string",
+                                    "enum": [
+                                      "value"
+                                    ]
+                                  },
+                                  "value": {
+                                    "anyOf": [
+                                      {
+                                        "properties": {
+                                          "kind": {
+                                            "type": "string",
+                                            "enum": [
+                                              "reference"
+                                            ]
+                                          },
+                                          "source": {
+                                            "type": "string"
+                                          },
+                                          "path": {
+                                            "type": "string"
+                                          }
+                                        },
+                                        "required": [
+                                          "kind",
+                                          "source",
+                                          "path"
+                                        ]
+                                      },
+                                      {
+                                        "properties": {
+                                          "kind": {
+                                            "type": "string",
+                                            "enum": [
+                                              "expression"
+                                            ]
+                                          },
+                                          "expression": {
+                                            "type": "string"
+                                          }
+                                        },
+                                        "required": [
+                                          "kind",
+                                          "expression"
+                                        ]
+                                      },
+                                      {
+                                        "properties": {
+                                          "kind": {
+                                            "type": "string",
+                                            "enum": [
+                                              "fact"
+                                            ]
+                                          },
+                                          "fact": {
+                                            "type": "string"
+                                          }
+                                        },
+                                        "required": [
+                                          "kind",
+                                          "fact"
+                                        ]
+                                      }
+                                    ],
+                                    "type": "object"
+                                  }
+                                },
+                                "required": [
+                                  "name",
+                                  "type",
+                                  "value"
+                                ]
+                              },
+                              {
+                                "properties": {
+                                  "name": {
+                                    "type": "string"
+                                  },
+                                  "type": {
+                                    "type": "string",
+                                    "enum": [
+                                      "array"
+                                    ]
+                                  },
+                                  "items": {
+                                    "type": "array",
+                                    "items": {
+                                      "anyOf": [
+                                        {
+                                          "properties": {
+                                            "type": {
+                                              "type": "string",
+                                              "enum": [
+                                                "value"
+                                              ]
+                                            },
+                                            "value": {
+                                              "anyOf": [
+                                                {
+                                                  "properties": {
+                                                    "kind": {
+                                                      "type": "string",
+                                                      "enum": [
+                                                        "fact"
+                                                      ]
+                                                    },
+                                                    "fact": {
+                                                      "type": "string"
+                                                    }
+                                                  },
+                                                  "required": [
+                                                    "kind",
+                                                    "fact"
+                                                  ]
+                                                },
+                                                {
+                                                  "properties": {
+                                                    "kind": {
+                                                      "type": "string",
+                                                      "enum": [
+                                                        "reference"
+                                                      ]
+                                                    },
+                                                    "source": {
+                                                      "type": "string"
+                                                    },
+                                                    "path": {
+                                                      "type": "string"
+                                                    }
+                                                  },
+                                                  "required": [
+                                                    "kind",
+                                                    "source",
+                                                    "path"
+                                                  ]
+                                                },
+                                                {
+                                                  "properties": {
+                                                    "kind": {
+                                                      "type": "string",
+                                                      "enum": [
+                                                        "expression"
+                                                      ]
+                                                    },
+                                                    "expression": {
+                                                      "type": "string"
+                                                    }
+                                                  },
+                                                  "required": [
+                                                    "kind",
+                                                    "expression"
+                                                  ]
+                                                }
+                                              ],
+                                              "type": "object"
+                                            }
+                                          },
+                                          "required": [
+                                            "type",
+                                            "value"
+                                          ]
+                                        },
+                                        {
+                                          "properties": {
+                                            "type": {
+                                              "type": "string",
+                                              "enum": [
+                                                "struct"
+                                              ]
+                                            },
+                                            "properties": {
+                                              "type": "array",
+                                              "items": {
+                                                "type": "object",
+                                                "properties": {
+                                                  "name": {
+                                                    "type": "string"
+                                                  },
+                                                  "type": {
+                                                    "type": "string",
+                                                    "enum": [
+                                                      "value"
+                                                    ]
+                                                  },
+                                                  "value": {
+                                                    "anyOf": [
+                                                      {
+                                                        "properties": {
+                                                          "kind": {
+                                                            "type": "string",
+                                                            "enum": [
+                                                              "reference"
+                                                            ]
+                                                          },
+                                                          "source": {
+                                                            "type": "string"
+                                                          },
+                                                          "path": {
+                                                            "type": "string"
+                                                          }
+                                                        },
+                                                        "required": [
+                                                          "kind",
+                                                          "source",
+                                                          "path"
+                                                        ]
+                                                      },
+                                                      {
+                                                        "properties": {
+                                                          "kind": {
+                                                            "type": "string",
+                                                            "enum": [
+                                                              "expression"
+                                                            ]
+                                                          },
+                                                          "expression": {
+                                                            "type": "string"
+                                                          }
+                                                        },
+                                                        "required": [
+                                                          "kind",
+                                                          "expression"
+                                                        ]
+                                                      },
+                                                      {
+                                                        "properties": {
+                                                          "kind": {
+                                                            "type": "string",
+                                                            "enum": [
+                                                              "fact"
+                                                            ]
+                                                          },
+                                                          "fact": {
+                                                            "type": "string"
+                                                          }
+                                                        },
+                                                        "required": [
+                                                          "kind",
+                                                          "fact"
+                                                        ]
+                                                      }
+                                                    ],
+                                                    "type": "object"
+                                                  }
+                                                },
+                                                "required": [
+                                                  "name",
+                                                  "type",
+                                                  "value"
+                                                ]
+                                              }
+                                            }
+                                          },
+                                          "required": [
+                                            "type",
+                                            "properties"
+                                          ]
+                                        }
+                                      ],
+                                      "type": "object"
+                                    }
+                                  }
+                                },
+                                "required": [
+                                  "name",
+                                  "type",
+                                  "items"
+                                ]
+                              },
+                              {
+                                "properties": {
+                                  "name": {
+                                    "type": "string"
+                                  },
+                                  "type": {
+                                    "type": "string",
+                                    "enum": [
+                                      "struct"
+                                    ]
+                                  },
+                                  "properties": {
+                                    "type": "array",
+                                    "items": {
+                                      "type": "object",
+                                      "properties": {
+                                        "name": {
+                                          "type": "string"
+                                        },
+                                        "type": {
+                                          "type": "string",
+                                          "enum": [
+                                            "value"
+                                          ]
+                                        },
+                                        "value": {
+                                          "anyOf": [
+                                            {
+                                              "properties": {
+                                                "kind": {
+                                                  "type": "string",
+                                                  "enum": [
+                                                    "fact"
+                                                  ]
+                                                },
+                                                "fact": {
+                                                  "type": "string"
+                                                }
+                                              },
+                                              "required": [
+                                                "kind",
+                                                "fact"
+                                              ]
+                                            },
+                                            {
+                                              "properties": {
+                                                "kind": {
+                                                  "type": "string",
+                                                  "enum": [
+                                                    "reference"
+                                                  ]
+                                                },
+                                                "source": {
+                                                  "type": "string"
+                                                },
+                                                "path": {
+                                                  "type": "string"
+                                                }
+                                              },
+                                              "required": [
+                                                "kind",
+                                                "source",
+                                                "path"
+                                              ]
+                                            },
+                                            {
+                                              "properties": {
+                                                "kind": {
+                                                  "type": "string",
+                                                  "enum": [
+                                                    "expression"
+                                                  ]
+                                                },
+                                                "expression": {
+                                                  "type": "string"
+                                                }
+                                              },
+                                              "required": [
+                                                "kind",
+                                                "expression"
+                                              ]
+                                            }
+                                          ],
+                                          "type": "object"
+                                        }
+                                      },
+                                      "required": [
+                                        "name",
+                                        "type",
+                                        "value"
+                                      ]
+                                    }
+                                  }
+                                },
+                                "required": [
+                                  "name",
+                                  "type",
+                                  "properties"
+                                ]
+                              }
+                            ],
+                            "type": "object"
+                          }
+                        }
+                      }
+                    },
+                    "result": {
+                      "type": "object",
+                      "required": [
+                        "name",
+                        "action"
+                      ],
+                      "properties": {
+                        "name": {
+                          "type": "string"
+                        },
+                        "action": {
+                          "type": "string",
+                          "enum": [
+                            "merge"
+                          ]
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "type",
+                    "dataScheme",
+                    "result"
+                  ]
+                }
+              ],
+              "type": "object"
+            }
+          }
+        },
+        "required": [
+          "steps"
+        ]
+      }
+    }
+  },
+  "required": [
+    "version",
+    "rules"
+  ]
+}
